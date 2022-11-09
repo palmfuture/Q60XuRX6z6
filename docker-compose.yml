@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  app1:
+    container_name: app1
+    build:
+      context: .
+    ports:
+      - 4000:4000
+    volumes:
+      - ./data.json:/usr/src/app/data.json
